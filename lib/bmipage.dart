@@ -73,6 +73,7 @@ class _BmiPageState extends State<BmiPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
+                        
                        Image.asset('images/male.png',height: 100.0,width: 100.0,),
                        SizedBox(
                            height: 20.0,
@@ -123,7 +124,7 @@ class _BmiPageState extends State<BmiPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                 
-                        Text('HEIGHT',style: headlines),
+                        Flexible(child: Text('HEIGHT',style: headlines)),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text("$height", style: boldNumber),
